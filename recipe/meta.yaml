@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/BoldingBruggeman/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f6228406e715823a340ba4ac9c3d329359aa7adb27885fa64765736db6b4d082
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyncview-{{ version }}.tar.gz
+  sha256: 683d75742c443d38d0d3e4044a25c65120ec2f93f31fcb475153041f17d74c1b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
     - multiplot = pyncview.multiplot:main
     - pyncview = pyncview.pyncview:main

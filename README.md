@@ -9,6 +9,13 @@ Package license: GPL-2.0-only
 
 Summary: NetCDF viewer written in Python
 
+PyNcView is a cross-platform NetCDF viewer written in Python.
+It provides an easy-to-use graphical user interface for the creation of
+animations and publication-quality figures. It can open multiple NetCDF
+files side-by-side and can plot expressions containing NetCDF variables
+and mathematical operators.
+
+
 Current build status
 ====================
 
