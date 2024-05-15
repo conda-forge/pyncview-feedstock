@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyncview-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyncview-{{ version }}.tar.gz
   sha256: 683d75742c443d38d0d3e4044a25c65120ec2f93f31fcb475153041f17d74c1b
 
 build:
