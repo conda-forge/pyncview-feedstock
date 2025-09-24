@@ -27,8 +27,7 @@ requirements:
     - python >={{ python_min }}
     - netcdf4
     - xmlplot >=0.9.31
-    - matplotlib
-    - pyqt
+    - pyside6
 
 test:
   imports:
