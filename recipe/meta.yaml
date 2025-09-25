@@ -1,5 +1,5 @@
 {% set name = "pyncview" %}
-{% set version = "0.99.41" %}
+{% set version = "0.99.42" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyncview-{{ version }}.tar.gz
-  sha256: b1695912be19d4382b36d7efe664c85f645d7e82f0e47eec9cd917127a70c97d
+  sha256: fcfd0aa2f308f73007f9d7e854addfc04eba88b1f2d0294f7db33c5f0a19d01f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   entry_points:
     - multiplot = pyncview.multiplot:main
     - pyncview = pyncview.pyncview:main
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - netcdf4
-    - xmlplot >=0.9.31
+    - xmlplot >=0.9.32
     - pyside6
 
 test:
