@@ -1,5 +1,5 @@
 {% set name = "pyncview" %}
-{% set version = "0.99.42" %}
+{% set version = "0.99.43" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyncview-{{ version }}.tar.gz
-  sha256: fcfd0aa2f308f73007f9d7e854addfc04eba88b1f2d0294f7db33c5f0a19d01f
+  sha256: 704eae2fd5fa7b8673c6602773e2366d2d278e041cf70f5b760107b56eff996c
 
 build:
   noarch: python
